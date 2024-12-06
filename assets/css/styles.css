@@ -11,9 +11,9 @@
   --font-bold: 700;
 
   /*===== Colors =====*/
-  --first-color: #a409d3;
+  --first-color: #0335d6;
   --first-color-dark: #012460;
-  --first-color-darken: #290f09;
+  --first-color-darken: #1286a0;
   --text-color: #54423D;
   --first-color-light: #eae7e6;
   --first-color-lighten: #fffafa;
@@ -336,166 +336,48 @@ img{
   font-size: var(--small-font-size);
 }
 
-/* ===== SKILLS =====*/
-.skills__container{
-  row-gap: 2rem;
-}
-
-.skills__subtitle{
-  font-size: var(--h3-font-size);
-  color: var(--first-color-dark);
-  margin-bottom: var(--mb-2);
-}
-
-.skills__data {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 var(--mb-4);
-  margin-bottom: var(--mb-4);
-}
-
-.skills__name{
-  text-transform: uppercase;
-}
-
-.skills__bar{
-  position: absolute;
-  bottom: -.75rem;
-  height: .25rem;
-  background-color: var(--first-color);
-}
-
-.skills__html{
-  width: 80%;
-}
-.skills__js{
-  width: 90%;
-}
-.skills__react{
-  width: 70%;
-}
-.skills__angular{
-  width: 60%;
-}
-
-.skills__php{
-  width: 80%;
-}
-
-.skills__node{
-  width: 70%;
-}
-
-.skills__firebase{
-  width: 90%;
-}
-.skills_python{
-  width: 60%;
-}
-
 /* ===== EDUCATION =====*/
-.education__container{
-  row-gap: 2rem;
+.education {
+  padding: 50px 0;
 }
 
-.education__content{
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+.education .section-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
 }
 
-.education__year, .education__race {
-  font-size: var(--h3-font-size);
-  margin-bottom: .25rem;
-}
-
-.education__university, .education__specialty{
-  display: block;
-  font-size: var(--smaller-font-size);
-}
-
-.education__university, .education__year {
-  text-align: right;
-}
-
-.education__time {
-  padding: 0 1rem;
-  justify-self: center;
-}
-
-.education__rounder{
-  position: relative;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: var(--first-color);
-  border-radius: 50%;
-}
-
-.education__rounder::before{
-  content: '';
-  position: absolute;
-  transform: translate(-4px, -4px);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid var(--first-color);
-}
-
-.education__line {
-  display: block;
-  height: 90%;
-  width: 2px;
-  background-color: var(--first-color);
-  transform: translate(5px,-4px);
-}
-
-/* ===== SERVICES =====*/
-.services__container{
-  row-gap: 2rem;
-}
-
-.services__content{
-  padding: 1.5rem .5rem;
-  border: 2px solid var(--first-color);
-  border-radius: .5rem;
-  text-align: center;
-}
-
-.services__icon{
+.education .section-title {
   font-size: 2rem;
-  padding: .5rem;
-  background-color: var(--first-color);
-  color: var(--first-color-lighten);
-  border-radius: 50%;
-  margin-bottom: var(--mb-2);
+  margin-bottom: 30px;
 }
 
-.services__title{
-  font-size: 1.25rem;
-  color: var(--first-color-dark);
-  margin-bottom: var(--mb-1);
+.education .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.services__content, .services__icon, .services__description, .services__title{
-  transition: .5s;
+.education .card-body {
+  text-align: center;
+  padding: 20px;
 }
 
-.services__content:hover{
-  background-color: var(--first-color);
+.education .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.services__content:hover  .services__icon{
-  background-color: var(--first-color-lighten);
-  color: var(--first-color);
+.education .card-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
 }
 
-.services__content:hover .services__title{
-  color: var(--first-color-lighten);
+.education__container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.services__content:hover .services__description{
-  color: var(--first-color-lighten);
-}
+
+
 
 /* ===== PROJECT IN MIND  =====*/
 .project{
@@ -665,7 +547,6 @@ img{
   }
 
   .about__container,
-  .skills__container,
   .services__container,
   .works__container,
   .contact__container,
@@ -765,5 +646,51 @@ img{
   .services__container,
   .works__container{
     grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* Hobby Section Title */
+.hobby-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Carousel Styles */
+.carousel-inner {
+  max-height: 1000px; /* Adjust height to maintain a clean look */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto; /* Make sure the images scale proportionally */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Adds color to carousel controls */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjusts the width of the control buttons */
+}
+
+.carousel {
+  margin-top: 30px; /* Adds some space before the carousel */
+  border-radius: 8px; /* Optional: rounds the corners */
+}
+
+/* Ensure responsiveness on small screens */
+@media (max-width: 767px) {
+  .carousel-inner {
+    max-height: 300px; /* Smaller height for mobile */
+  }
+
+  .hobby-title {
+    font-size: 1.5rem; /* Adjust title size for mobile screens */
   }
 }

@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Add Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Add Bootstrap JS (with Popper.js for dropdowns, modals, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
   <!-- ===== CSS ===== -->
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -11,11 +16,11 @@
   <!-- ===== BOX ICONS ===== -->
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 
-  <title>Personal portfolio | Salsa</title>
+  <title>Personal Portfolio | Erick Budiharto</title>
 </head>
 
 <body>
-  <!--===== HEADER =====-->
+  <!-- ===== HEADER =====-->
   <header class="l-header">
     <nav class="nav bd-grid">
       <div class="nav__toggle" id="nav-toggle">
@@ -23,7 +28,7 @@
       </div>
 
       <div>
-        <a href="" class="nav__logo">Salsa</a>
+        <a href="#home" class="nav__logo">Erick Budiharto</a>
       </div>
 
       <div class="nav__menu" id="nav-menu">
@@ -32,27 +37,12 @@
         </div>
 
         <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">Organization</a>
-          </li>
-          <li class="nav__item">
-            <a href="#educa" class="nav__link">Education</a>
-          </li>
-          <li class="nav__item">
-            <a href="#Jadwal" class="nav__link">Jadwal</a>
-          </li>
-          <li class="nav__item">
-            <a href="#works" class="nav__link">Works</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contactme</a>
-          </li>
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#educa" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+          <li class="nav__item"><a href="#hobby" class="nav__link">Hobby</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -64,26 +54,19 @@
       <div class="home__container bd-grid">
         <div class="home__data">
           <div class="home__img">
-            <img src="assets/img/1.png" alt="profil" />
+            <img src="assets/img/1.png" alt="Profil Erick Budiharto" />
           </div>
-
-          <h1 class="home__title">Salsabila Nurrahmah</h1>
-          <span class="home__profession">I love bringing efficiency to things.
-            I have a passion for solving problems, building sustainable solutions, and learning as much as I can about
-            things that interest me. I’am also excited about talking to people who are interested in Data Processing and
-            Self-Improvement.
-          </span>
-
+          <h1 class="home__title">Erick Budiharto</h1>
+          <p class="home__profession">
+            I am Erick Budiharto, a 19-year-old student who is friendly, fun, and tech-savvy. Currently, I am in my 3rd
+            semester of the Information Systems program at Pelita Harapan University, Medan.
+          </p>
           <div class="home__social">
-            <a href="https://www.linkedin.com/in/salsabila-nurrahmah-456bb6203" class="home__social-link"><i
-                class="bx bxl-linkedin"></i></a>
-            <a href="https://github.com/Salsabilbil" class="home__social-link"><i class="bx bxl-github"></i></a>
-            <a href="#" class="home__social-link"><i class="bx bxl-dribbble"></i></a>
-            <a href="https://www.instagram.com/ssalsaabil/" class="home__social-link"><i
-                class="bx bxl-instagram"></i></a>
+            <a href="#" class="home__social-link"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" class="home__social-link"><i class="bx bxl-github"></i></a>
+            <a href="#" class="home__social-link"><i class="bx bxl-instagram"></i></a>
           </div>
-
-          <a download="" href="https://www38.zippyshare.com/v/JCGj5Cdd/file.html" class="button home__button">Download Resume</a>
+          <a href="#" class="button home__button" download>Download Resume</a>
         </div>
       </div>
     </section>
@@ -92,59 +75,17 @@
     <section class="about section" id="about">
       <span class="section-subtitle">My intro</span>
       <h2 class="section-title">About Me</h2>
-
       <div class="about__container bd-grid">
-          <img src="assets/img/2.png" alt="about" class="about__img" />
-          <div class="about-data">
-            <p class="about__description">
-              I’am Salsabila Nurrahmah and I’am 20 years of age. I’am a 3rd semester student from the Informatics
-              Engineering study progam, PLN Jakarta University of Technology. I was born and grew up in Surakarta or more
-              famous as Solo, Central Java. I’am fun, friendly and brimming with positive vibes. I like reading, taking
-              pictures and hanging out with my friends.
-              I’am hard working, detail oriented, tech savvy, and problem solver. In the Pemrogaman Web course I learned a
-              lot about how to learn web-based applications using HTML, CSS, JS. I hope, I have a goal that I want to
-              achieve to become a Data Scientist.
-            </p>
-        </div>
-      </div>
-    </section>
-
-    <!--===== SKILLS =====-->
-    <section class="skills section" id="skills">
-      <span class="section-subtitle">My experience </span>
-      <h2 class="section-title">Organization</h2>
-
-      <div class="skills__container bd-grid">
-        <div class="skills__content">
-
-          <div class="skills__data">
-            <span class="skills__name">Scientific  Work</span>
-            <span class="skills__number">(2018-2019)</span>
-          </div>
-          <div class="skills__data">
-            <span class="skills__name">Youth Scientific Activities(KIR), Scientific Mastery Activities and academic abilities and reseach and so on</span>
-          </div>
-          <div class="skills__data">
-            <span class="skills__name"></span>
-            <span class="skills__number"></span>
-
-          </div>
-          <div class="skills__data">
-            <span class="skills__name"></span>
-            <span class="skills__number"></span>
-          </div>
-        </div>
-
-        <div class="skills__content">
-
-          <div class="skills__data">
-            <span class="skills__name">Self council</span>
-            <span class="skills__number">2019 - 2020</span>
-          </div>
-          <div class="skills__data">
-            <span class="skills__name">A kind of scouting activity</span>
-          </div>
-          </div>
+        <img src="assets/img/2.png" alt="About Erick" class="about__img" />
+        <div class="about-data">
+          <p class="about__description">
+            I am Erick Budiharto and I am 19 years old. I am a 3rd semester student from the Information Systems study
+            program at Pelita Harapan University, Medan. I was born and raised in Medan. I am fun, friendly and full of
+            positive vibes. I like sports, traveling and hanging out with my friends. I am hardworking, detail-oriented,
+            tech-savvy, and a problem solver. In the Basic Web Technology course, I learned a lot about how to learn
+            web-based applications using HTML, CSS, JS. My hope, I have goals that I want to achieve to become a Web
+            Developer.
+          </p>
         </div>
       </div>
     </section>
@@ -152,131 +93,48 @@
     <!--===== EDUCATION =====-->
     <section class="education section" id="educa">
       <span class="section-subtitle">Qualification</span>
-      <h2 class="section-title">My education</h2>
-
-      <div class="education__container bd-grid">
-        <div class="education__content">
-          <div>
-            <h3 class="education__year">2008 - 2014</h3>
-            <span class="education__university"></span>
+      <h2 class="section-title">My Education</h2>
+      <div class="education__container container">
+        <div class="row">
+          <!-- Education Card 1 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">2010 - 2016</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Sutomo 2 Medan</h6>
+              </div>
+            </div>
           </div>
 
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
+          <!-- Education Card 2 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">2016 - 2019</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Sutomo 2 Medan</h6>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h3 class="education__race">Gayam Public Elementary School 1</h3>
-            <span class="education__specialty"></span>
-          </div>
-        </div>
-        <div class="education__content">
-          <div>
-            <h3 class="education__year">2014 - 2017</h3>
-            <span class="education__university"></span>
-          </div>
-
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
+          <!-- Education Card 3 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">2019 - 2022</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Sutomo 2 Medan</h6>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h3 class="education__race">Sukoharjo Public Junior High School 2</h3>
-            <span class="education__specialty"></span>
+          <!-- Education Card 4 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">2023 - Now</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Universitas Pelita Harapan Medan</h6>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="education__content">
-          <div>
-            <h3 class="education__year">2017 - 2020</h3>
-            <span class="education__university"></span>
-          </div>
-
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
-          </div>
-
-          <div>
-            <h3 class="education__race">Sukoharjo  Public Senior High School 1 </h3>
-            <span class="education__specialty"></span>
-          </div>
-        </div>
-        <div class="education__content">
-          <div>
-            <h3 class="education__year">2021 - Now</h3>
-            <span class="education__university"></span>
-          </div>
-
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
-          </div>
-
-          <div>
-            <h3 class="education__race">University Institute Technology PLN Jakarta </h3>
-            <span class="education__specialty"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--===== SERVICES =====-->
-    <section class="services section" id="Jadwal">
-      <h2 class="section-title">My Jadwal</h2>
-
-      <div class="services__container bd-grid">
-        <div class="services__content">
-          <h3 class="services__title">Senin</h3>
-          <p class="services__description">
-            SISTEM MULTIMEDIA 2 E LAB.MULTI</p>
-            <p>13:00 - 14:40</p>
-        </div>
-
-        <div class="services__content">
-          <h3 class="services__title">Selasa</h3>
-          <p class="services__description">
-            MANAJEMEN TEKNIK 2 D 404B</p>
-            <p>08:00 - 09:40</p>
-            <p>STRUKTUR DATA 2 E LAB LJT</p>
-            <p>10:00 - 11:40 </p>
-            <p>PEMROGRAMAN WEB 3 G LAB DAS 2</p>
-            <p>13:00 - 15:30 </p>
-        </div>
-
-        <div class="services__content">
-          <h3 class="services__title">Rabu</h3>
-          <p class="services__description">
-            KOMUNIKASI DATA 2 A 501</p>
-            <p>08:00 - 09:40</p>
-            <p>BASIS DATA* 3 G Labsimpel</p>
-            <p>10:00 - 12:30</p>
-            <p>SISTEM OPERASI 2 D 901</p>
-            <p>13:00 - 14:40</p>
-        </div>
-
-        <div class="services__content">
-          <h3 class="services__title">Kamis</h3>
-          <p class="services__description">
-            PEMROSESAN DATA TERDISTRIBUSI 2 G 904</p>
-            <p>13:00 - 14:40</p>
-        </div>
-
-        <div class="services__content">
-          <h3 class="services__title">Jumat</h3>
-          <p class="services__description">
-            TEKNIK DIGITAL 2 D LAB LINUX</p>
-            <p>08:00 - 09:40</p>
-            <P>PEMROGRAMAN OBJEK 2 D LAB LJT</P>
-            <p>13:00-15:30</p>
-        </div>
-
-        <div class="services__content">
-          <h3 class="services__title">Sabtu</h3>
-          <p class="services__description">
-            EXPERT SYSTEM 2 A 503</p>
-            <p>09:00 - 10:40</p>
         </div>
       </div>
     </section>
@@ -285,97 +143,110 @@
     <section class="works section" id="works">
       <span class="section-subtitle">My portfolio</span>
       <h2 class="section-title">Recent Works</h2>
-
       <div class="works__container bd-grid">
         <div class="works__img">
           <img src="assets/img/p1.png" alt="work1" />
-
           <div class="works__data">
-            <a href="https://salsabilbil.github.io/Salsabilanurrahmah.github.io/?classId=1a65e766-68e6-404a-8abb-700f754bdf5e&assignmentId=f5290e9d-06ed-4a7e-8fe3-1e504357a783&submissionId=07b68d2c-058b-d3f7-53f4-0827b5332084" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
             <span class="works__title">Work 1</span>
           </div>
         </div>
 
         <div class="works__img">
-          <img src="assets/img/p2.png" alt="work2" />
-
+          <img src="assets/img/p2.png" alt="work1" />
           <div class="works__data">
-            <a href="https://studikasus2.netlify.app" class="works__link"><i class="bx bx-link-alt"></i></a>
-            <span class="works__title">Work 2</span>
+            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">Work 1</span>
           </div>
         </div>
 
         <div class="works__img">
-          <img src="assets/img/p3.png" alt="work3" />
-
+          <img src="assets/img/p3.png" alt="work1" />
           <div class="works__data">
-            <a href="https://studikasus3.netlify.app" class="works__link"><i class="bx bx-link-alt"></i></a>
-            <span class="works__title">Work 3</span>
+            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">Work 1</span>
           </div>
         </div>
 
         <div class="works__img">
-          <img src="assets/img/p4.png" alt="work4" />
-
+          <img src="assets/img/p4.png" alt="work1" />
           <div class="works__data">
-            <a href="https://studikasus4.netlify.app/" class="works__link"><i class="bx bx-link-alt"></i></a>
-            <span class="works__title">Work 4</span>
+            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">Work 1</span>
           </div>
         </div>
 
         <div class="works__img">
-          <img src="assets/img/p5.png" alt="work5" />
-
+          <img src="assets/img/p5.png" alt="work1" />
           <div class="works__data">
-            <a href="https://studikasus5.netlify.app" class="works__link"><i class="bx bx-link-alt"></i></a>
-            <span class="works__title">Work 5</span>
+            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">Work 1</span>
           </div>
         </div>
 
         <div class="works__img">
-          <img src="assets/img/p6.png" alt="work6" />
-
+          <img src="assets/img/p6.png" alt="work1" />
           <div class="works__data">
-            <a href="https://studikasus6.netlify.app" class="works__link"><i class="bx bx-link-alt"></i></a>
-            <span class="works__title">Work 6</span>
+            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">Work 1</span>
           </div>
         </div>
       </div>
+
+      </div>
     </section>
+
+    <!--===== HOOBY =====-->
+<section class="hobby section" id="hobby">
+  <h2 class="hobby-title">My Hobbies</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="assets/img/c1.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/c2.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/c3.png" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</section>
 
     <!--===== CONTACT =====-->
     <section class="contact section" id="contact">
       <span class="section-subtitle">Contact Me</span>
       <h2 class="section-title">Get In Touch</h2>
-
       <div class="contact__container bd-grid">
         <form action="#" class="contact__form">
           <div class="contact__inputs">
-            <input type="text" placeholder="name" class="contact__input" />
-            <input type="mail" placeholder="email" class="contact__input" />
+            <input type="text" placeholder="Name" class="contact__input" required />
+            <input type="email" placeholder="Email" class="contact__input" required />
           </div>
-          <input type="text" placeholder="Project" class="contact__input" />
-
-          <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-
-          <input type="submit" value="Send Message" class="button contact__button" />
+          <input type="text" placeholder="Project" class="contact__input" required />
+          <textarea placeholder="Message" class="contact__input" rows="10" required></textarea>
+          <button type="submit" class="button contact__button">Send Message</button>
         </form>
 
-        <div>
-          <div class="contact__info">
-            <h3 class="contact__subtitle">Call me</h3>
-            <span class="contact__text">123-456-789</span>
-            <span class="contact__text">987-654-321</span>
-          </div>
-          <div class="contact__info">
-            <h3 class="contact__subtitle">E-mail</h3>
-            <span class="contact__text">salsabilanr4@gmail.com</span>
-            <span class="contact__text">contactme@salsa.com</span>
-          </div>
-          <div class="contact__info">
-            <h3 class="contact__subtitle">Location</h3>
-            <span class="contact__text">Jakarta.ID</span>
-          </div>
+        <div class="contact__info">
+          <h3 class="contact__subtitle">Call me</h3>
+          <span class="contact__text">+6281218218178</span>
+          <span class="contact__text">987-654-321</span>
+
+          <h3 class="contact__subtitle">E-mail</h3>
+          <span class="contact__text">erickgantengsangat@gmail.com</span>
+
+          <h3 class="contact__subtitle">Location</h3>
+          <span class="contact__text">MEdan.ID</span>
         </div>
       </div>
     </section>
@@ -384,20 +255,11 @@
   <!--===== FOOTER =====-->
   <footer class="footer section">
     <div class="footer__container bd-grid">
-      <h1 class="footer__title">Salsa</h1>
-      <p class="footer__description">
-        I am Salsa and this is my personal website, consult me here.
-      </p>
-
-      <div class="footer__social">
-        <a href="#" class="footer__link"><i class="bx bxl-facebook-square"></i></a>
-        <a href="#" class="footer__link"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__link"><i class="bx bxl-twitter"></i></a>
-      </div>
-      <p class="footer__copy">All right reserved by Salsa - 2022</p>
+      <h1 class="footer__title">Erick Budiharto</h1>
+      <p class="footer__text">Personal website. All rights reserved &copy; 2024</p>
     </div>
   </footer>
-  <!--===== MAIN JS =====-->
+
   <script src="assets/js/main.js"></script>
 </body>
 
